@@ -85,9 +85,18 @@ export const BscLogo = () => (
     <DefsAndFilters />
     <g filter="url(#shadow_depth)">
       <circle cx="16" cy="16" r="16" fill="#F3BA2F"/>
-      {/* Official Binance Geometry */}
-      <path fill="#12161C" d="M16 11.5 L13.5 14 L16 16.5 L18.5 14 L16 11.5 Z M20 12.5 L22.5 10 L25 12.5 L22.5 15 L20 12.5 Z M22.5 17 L25 19.5 L22.5 22 L20 19.5 L22.5 17 Z M16 20.5 L18.5 23 L16 25.5 L13.5 23 L16 20.5 Z M9.5 19.5 L7 22 L9.5 24.5 L12 22 L9.5 19.5 Z M7 12.5 L9.5 10 L12 12.5 L9.5 15 L7 12.5 Z" />
-      <path fill="#12161C" d="M16 7.5 L19.5 11 L18 12.5 L16 10.5 L14 12.5 L12.5 11 L16 7.5 Z M24.5 16 L21 19.5 L19.5 18 L21.5 16 L19.5 14 L21 12.5 L24.5 16 Z M16 24.5 L12.5 21 L14 19.5 L16 21.5 L18 19.5 L19.5 21 L16 24.5 Z M7.5 16 L11 12.5 L12.5 14 L10.5 16 L12.5 18 L11 19.5 L7.5 16 Z" />
+      {/* 
+         Official Binance Geometry:
+         Central Diamond + 4 Interlocking Chevrons
+         Coordinates calculated for a 32x32 grid with consistent 1px axial gap (approx)
+      */}
+      <path fill="#12161C" d="
+        M16 12.5 L19.5 16 L16 19.5 L12.5 16 Z
+        M16 6 L20.5 10.5 L17.75 13.25 L16 11.5 L14.25 13.25 L11.5 10.5 Z
+        M26 16 L21.5 20.5 L18.75 17.75 L20.5 16 L18.75 14.25 L21.5 11.5 Z
+        M16 26 L11.5 21.5 L14.25 18.75 L16 20.5 L17.75 18.75 L20.5 21.5 Z
+        M6 16 L10.5 11.5 L13.25 14.25 L11.5 16 L13.25 17.75 L10.5 20.5 Z
+      " />
     </g>
     <circle cx="16" cy="16" r="15" stroke="white" strokeOpacity="0.1" strokeWidth="1" />
   </svg>
